@@ -230,6 +230,7 @@ header.masthead .intro-text .intro-heading {
   width: 225px;
   height: 225px;
   margin-bottom: 20px;
+  z-index: 1;
 }
 
 .service-heading {
