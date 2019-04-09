@@ -8,10 +8,13 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Agency - Start Bootstrap Theme</title>
+  <title>Evandro Muti Web Site</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Fancybox CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" rel="stylesheet">
 
   <!-- Custom fonts for this template -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -21,7 +24,7 @@
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
   <!-- Custom styles for this template -->
-  <link href="css/agency.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 
 </head>
 
@@ -30,27 +33,20 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Evandro Muti</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
         <i class="fas fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+            <a class="nav-link js-scroll-trigger" href="#portfolio">Opere</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+            <a class="nav-link js-scroll-trigger" href="#about">Biografia</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#team">Team</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            <a class="nav-link js-scroll-trigger" href="#contact">Contatti</a>
           </li>
         </ul>
       </div>
@@ -60,144 +56,112 @@
   <!-- Header -->
   <header class="masthead">
     <div class="container">
-      <div class="intro-text">
-        <div class="intro-lead-in">Welcome To Our Studio!</div>
-        <div class="intro-heading text-uppercase">It's Nice To Meet You</div>
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
+      <div class="row">
+        <div class="profilo col-xs-4">
+          <img class="img-fluid  mx-auto rounded-circle" src="/img/profilo.jpg" alt="">
+          <ul class="list-inline social-buttons">
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </header>
-
-  <!-- Services -->
-  <section id="services">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Services</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-        </div>
-      </div>
-      <div class="row text-center">
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading">E-Commerce</h4>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-        </div>
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading">Responsive Design</h4>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-        </div>
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading">Web Security</h4>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
+  
   <!-- Portfolio Grid -->
   <section class="bg-light" id="portfolio">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Portfolio</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          <h2 class="section-heading text-uppercase">Opere</h2>
+         <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>-->
         </div>
       </div>
+      <!-- Geometrico BN -->
       <div class="row">
         <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+          <a class="portfolio-link" data-fancybox="geom-bn" href="img/opere/geometrico/S-T. - china su carta - 50X50 - 1973_6_m.jpg"  data-caption="china su carta - 50X50 - 1973_6_m.jpg" >
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
+                <i class="fas fa-search fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+            <img class="img-fluid" src="img/opere/geometrico/S-T. - china su carta - 50X50 - 1973_6_m.jpg"alt="">
           </a>
+          <div class="hidden">
+              <a data-fancybox="geom-bn" href="img/opere/geometrico/S.T. - china su carta - 50X50 - 1972 -2.jpg" data-caption="china su carta - 50X50 - 1972 -2.jpg"></a>
+              <a data-fancybox="geom-bn" href="img/opere/geometrico/S.T. - china su carta - 50X50 - 1972_3_m.jpg" data-caption="china su carta - 50X50 - 1972_3_m.jpg"></a>
+              <a data-fancybox="geom-bn" href="img/opere/geometrico/S.T. - china su carta - 50X50 - 1972-3.jpg" data-caption="china su carta - 50X50 - 1972-3.jpg"></a>
+              <a data-fancybox="geom-bn" href="img/opere/geometrico/S.T. - china su carta - 50X50 - 1972.jpg" data-caption="china su carta - 50X50 - 1972.jpg"></a>
+              <a data-fancybox="geom-bn" href="img/opere/geometrico/S.T. - china su carta - 50X50 - 1973  2.jpg" data-caption="china su carta - 50X50 - 1973  2.jpg"></a>
+              <a data-fancybox="geom-bn" href="img/opere/geometrico/S.T. - china su carta - 50X50 - 1973 -3.jpg" data-caption="china su carta - 50X50 - 1973 -3.jpg"></a>
+              <a data-fancybox="geom-bn" href="img/opere/geometrico/S.T. - china su carta - 50X50 - 1973_4_m.jpg" data-caption="china su carta - 50X50 - 1973_4_m.jpg"></a>
+              <a data-fancybox="geom-bn" href="img/opere/geometrico/S.T. - china su carta - 50X50 - 1973_5_m.jpg" data-caption="china su carta - 50X50 - 1973_5_m.jpg"></a>
+              <a data-fancybox="geom-bn" href="img/opere/geometrico/S.T. - china su carta - 50X50 - 1974  1_m.jpg" data-caption="china su carta - 50X50 - 1974  1_m.jpg"></a>
+              <a data-fancybox="geom-bn" href="img/opere/geometrico/S.T. - china su carta - 50X50 - 1975  1_m.jpg" data-caption="china su carta - 50X50 - 1975  1_m.jpg"></a>
+              <a data-fancybox="geom-bn" href="img/opere/geometrico/S.T. - china su carta - 50X50 - 1975_6_m.jpg" data-caption="china su carta - 50X50 - 1975_6_m.jpg"></a>
+              <a data-fancybox="geom-bn" href="img/opere/geometrico/S.T. - china su carta - 50X50 - 1975_7_m.jpg" data-caption="china su carta - 50X50 - 1975_7_m.jpg"></a>
+              <a data-fancybox="geom-bn" href="img/opere/geometrico/S.T. - china su carta - 50X50 - 1976.jpg" data-caption="china su carta - 50X50 - 1976.jpg"></a>
+              <a data-fancybox="geom-bn" href="img/opere/geometrico/S.T. - china su carta - 50X50 - 1977.jpg" data-caption="china su carta - 50X50 - 1977.jpg"></a>
+              <a data-fancybox="geom-bn" href="img/opere/geometrico/S.T. - china su carta - 50X50 1973  3_m.jpg" data-caption="china su carta - 50X50 1973  3_m.jpg"></a>
+              <a data-fancybox="geom-bn" href="img/opere/geometrico/S.T. 2- china su carta - 50X50 - 1976.jpg" data-caption="china su carta - 50X50 - 1976.jpg"></a>
+              <a data-fancybox="geom-bn" href="img/opere/geometrico/ST - china su carta - 50X50 - 1975_2_m.jpg" data-caption="china su carta - 50X50 - 1975_2_m.jpg"></a>
+              <a data-fancybox="geom-bn" href="img/opere/geometrico/ST - china su carta - 50X50 - 1975_3_m.jpg" data-caption="china su carta - 50X50 - 1975_3_m.jpg"></a>
+              <a data-fancybox="geom-bn" href="img/opere/geometrico/ST - china su carta - 50X50 - 1975_4_m.jpg" data-caption="china su carta - 50X50 - 1975_4_m.jpg"></a>
+              <a data-fancybox="geom-bn" href="img/opere/geometrico/ST - china su carta - 50X50 - 1975_5_m.jpg" data-caption="china su carta - 50X50 - 1975_5_m.jpg"></a>
+
+          </div>  
           <div class="portfolio-caption">
-            <h4>Threads</h4>
-            <p class="text-muted">Illustration</p>
+            <h4>Geometrico</h4>
+            <p class="text-muted">Bianco e nero</p>
+            <p>Evandro Muti proviene, come cultura, dall’Architettura. E’ un grafico netto, impeccabile; guardando i suoi disegni a
+              china, pensi subito al lavoro sicuro e paziente del ragno che tesse la tela, aereo, astronauta della sua geometria
+              quasi funambolesca, le linee delle sue composizioni guizzano verso infiniti orizzonti.</p>
+            <p>Siro (Umberto Spironello), Roma 1977</p>
           </div>
         </div>
+        <!-- Geometrico Colore -->
         <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+           <a class="portfolio-link" data-fancybox="geom-col" href="img/opere/geometrico-col/002 - Nascita fredda - Acrilico su tela - 60x80 - 1982.jpg"  data-caption="Nascita fredda - Acrilico su tela - 60x80 - 1982.jpg" >
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
+                <i class="fas fa-search fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
+            <img class="img-fluid" src="img/opere/geometrico-col/002 - Nascita fredda - Acrilico su tela - 60x80 - 1982.jpg"alt="">
           </a>
+          <div class="hidden">
+              <a data-fancybox="geom-col" href="img/opere/geometrico-col/003 - CASABLANCA - ACRILICO SU TELA - 60X80 - 1983.jpg" data-caption="CASABLANCA - ACRILICO SU TELA - 60X80 - 1983.jpg"></a>
+              <a data-fancybox="geom-col" href="img/opere/geometrico-col/005 - SCOMPOSIZIONE 184 - ACRILICO SU TELA - 60X80-1984.jpg" data-caption="SCOMPOSIZIONE 184 - ACRILICO SU TELA - 60X80-1984.jpg"></a>
+              <a data-fancybox="geom-col" href="img/opere/geometrico-col/006-MIGRAZIONE-ACRILICO SU TELA-60X80-1984.jpg" data-caption="MIGRAZIONE-ACRILICO SU TELA-60X80-1984.jpg"></a>
+              <a data-fancybox="geom-col" href="img/opere/geometrico-col/007 - OGGETTO SPAZIALE - ACRILICO SU TELA - 60X80-1984.jpg" data-caption="OGGETTO SPAZIALE - ACRILICO SU TELA - 60X80-1984.jpg"></a>
+              <a data-fancybox="geom-col" href="img/opere/geometrico-col/008 - SENZA TITOLO - ACRILICO SU TELA - 60X80 - 1984.jpg" data-caption="SENZA TITOLO - ACRILICO SU TELA - 60X80 - 1984.jpg"></a>
+              <a data-fancybox="geom-col" href="img/opere/geometrico-col/009 - SCOMPOSIZIONE 284 - ACRILICO SU TELA - 60X80 - 1984.jpg" data-caption="SCOMPOSIZIONE 284 - ACRILICO SU TELA - 60X80 - 1984.jpg"></a>
+              <a data-fancybox="geom-col" href="img/opere/geometrico-col/011 - OP-POP - ACRILICO SU TELA - 60X80 - 1985.jpg" data-caption="OP-POP - ACRILICO SU TELA - 60X80 - 1985.jpg"></a>
+              <a data-fancybox="geom-col" href="img/opere/geometrico-col/012 - SCOMPOSIZIONE 285 - ACRILICO SU TELA - 60X80 - 1985.jpg" data-caption="SCOMPOSIZIONE 285 - ACRILICO SU TELA - 60X80 - 1985.jpg"></a>
+              <a data-fancybox="geom-col" href="img/opere/geometrico-col/014 - GEOSTRUTTURA COSMICA - ACRILICO SU TELA - 60X80 - 1985.jpg" data-caption="GEOSTRUTTURA COSMICA - ACRILICO SU TELA - 60X80 - 1985.jpg"></a>
+              <a data-fancybox="geom-col" href="img/opere/geometrico-col/015 - DIVERSITA' - ACRILICO SU TELA - 60X80 - 1986.jpg" data-caption="DIVERSITA' - ACRILICO SU TELA - 60X80 - 1986.jpg"></a>
+              <a data-fancybox="geom-col" href="img/opere/geometrico-col/020-SENZA TITOLO-ACRILICO SU TELA-60X80-1990.jpg" data-caption="SENZA TITOLO-ACRILICO SU TELA-60X80-1990.jpg"></a>
+              <a data-fancybox="geom-col" href="img/opere/geometrico-col/022 - CATENE SPAZIALI - ACRILICO SU TELA - 60X80 - 1994.jpg" data-caption="CATENE SPAZIALI - ACRILICO SU TELA - 60X80 - 1994.jpg"></a>
+              <a data-fancybox="geom-col" href="img/opere/geometrico-col/ELEGANZA-ACRILICO SU TELA-60X80-1991.jpg" data-caption="ELEGANZA-ACRILICO SU TELA-60X80-1991.jpg"></a>
+
+          </div>  
           <div class="portfolio-caption">
-            <h4>Explore</h4>
-            <p class="text-muted">Graphic Design</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Finish</h4>
-            <p class="text-muted">Identity</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Lines</h4>
-            <p class="text-muted">Branding</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Southwest</h4>
-            <p class="text-muted">Website Design</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Window</h4>
-            <p class="text-muted">Photography</p>
+            <h4>Geometrico</h4>
+            <p class="text-muted">Colore</p>
           </div>
         </div>
       </div>
@@ -209,202 +173,41 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">About</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <ul class="timeline">
-            <li>
-              <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/1.jpg" alt="">
-              </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4>2009-2011</h4>
-                  <h4 class="subheading">Our Humble Beginnings</h4>
-                </div>
-                <div class="timeline-body">
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                </div>
-              </div>
-            </li>
-            <li class="timeline-inverted">
-              <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/2.jpg" alt="">
-              </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4>March 2011</h4>
-                  <h4 class="subheading">An Agency is Born</h4>
-                </div>
-                <div class="timeline-body">
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="">
-              </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4>December 2012</h4>
-                  <h4 class="subheading">Transition to Full Service</h4>
-                </div>
-                <div class="timeline-body">
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                </div>
-              </div>
-            </li>
-            <li class="timeline-inverted">
-              <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="">
-              </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4>July 2014</h4>
-                  <h4 class="subheading">Phase Two Expansion</h4>
-                </div>
-                <div class="timeline-body">
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                </div>
-              </div>
-            </li>
-            <li class="timeline-inverted">
-              <div class="timeline-image">
-                <h4>Be Part
-                  <br>Of Our
-                  <br>Story!</h4>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Team -->
-  <section class="bg-light" id="team">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="team-member">
-            <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
-            <h4>Kay Garland</h4>
-            <p class="text-muted">Lead Designer</p>
-            <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </li>
-            </ul>
+          <h2 class="section-heading text-uppercase">Biografia</h2>
+          <!--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>-->
+          <p class="text-left">
+            Evandro Muti nasce a Viterbo, dove inizia la sua carriera artistica. I suoi primi lavori rispecchiano in pieno le
+            esperienze giovanili, creando degli effetti di chiaro e scuro, di spessori, di luci ed ombre con semplici linee nere
+            su cartoncini bianchi.
+            Questo lavoro si protrae fino ai primi anni settanta quando si trasferisce a Roma per seguire studi di architettura.
+            Comincia a frequentare le maggiori gallerie della capitale, conosce diversi artisti, con i quali fa amicizia e scopre
+            la famosa scuola del “Bauhaus” e con essa i suoi maggiori esponenti nel campo pittorico, quali Kle, Kandinsky,
+            Mondrian e Vasarely, che determinano la sua tecnica, fino ad inventare un suo genere personale. Questa scoperta
+            segnerà in modo fondamentale la sua arte.
+            <br>
+            Da questo momento abbandona il bianco e nero e si dedica al colore, che affronta con molta originalità e spigliatezza.
+            Crea delle visioni astratte, formate da intrecci geometrici, da forme su diversi piani, così da rendere il
+            quadro quasi tridimensionale portando avanti questo discorso fino ai primi anni ottanta. Evandro muti
+          
+            In questo periodo vi è il primo approccio al figurativo, dove crea un mondo tutto suo, fatto di quadri onirici,
+            incantati, paesaggi con strutture architettoniche immaginarie, surreali, con sfondi piatti, privi di sfumature ma
+            dalla forte vitalità coloristica. Ritrae oggetti di uso comune e ne stilizza le forme, rendendole quasi estranee.
+          
+            La padronanza del colore e la levigata finitura del tratto gli conferiscono un’intensa raffinatezza. In sintesi,
+            Evandro è attento all’oggetto, interessato al frammento, contemporaneo nel colore. Proprio al frammento e al colore si
+            rifà la sua ultima generazione di quadri, le sue ultime invenzioni.
+          
+            I soggetti sono nuovi: frammenti di treni. Il treno, simbolo per eccellenza del viaggio, quello che in effetti
+            l’artista compie con i suoi quadri, un viaggio immaginario intorno al mondo, cercando di abbracciare tutti i popoli
+            con la speranza di portare un messaggio di pace e fratellanza.
+          </p>
           </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="team-member">
-            <img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="">
-            <h4>Larry Parker</h4>
-            <p class="text-muted">Lead Marketer</p>
-            <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="team-member">
-            <img class="mx-auto rounded-circle" src="img/team/3.jpg" alt="">
-            <h4>Diana Pertersen</h4>
-            <p class="text-muted">Lead Developer</p>
-            <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-8 mx-auto text-center">
-          <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Clients -->
-  <section class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 col-sm-6">
-          <a href="#">
-            <img class="img-fluid d-block mx-auto" src="img/logos/envato.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <a href="#">
-            <img class="img-fluid d-block mx-auto" src="img/logos/designmodo.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <a href="#">
-            <img class="img-fluid d-block mx-auto" src="img/logos/themeforest.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <a href="#">
-            <img class="img-fluid d-block mx-auto" src="img/logos/creative-market.jpg" alt="">
-          </a>
-        </div>
       </div>
     </div>
   </section>
 
   <!-- Contact -->
+  <!--
   <section id="contact">
     <div class="container">
       <div class="row">
@@ -448,252 +251,17 @@
       </div>
     </div>
   </section>
-
+  -->
   <!-- Footer -->
   <footer>
     <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <span class="copyright">Copyright &copy; Your Website 2019</span>
-        </div>
-        <div class="col-md-4">
-          <ul class="list-inline social-buttons">
-            <li class="list-inline-item">
-              <a href="#">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <ul class="list-inline quicklinks">
-            <li class="list-inline-item">
-              <a href="#">Privacy Policy</a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">Terms of Use</a>
-            </li>
-          </ul>
-        </div>
+      <div class="d-flex justify-content-center">
+        <span class="copyright">Copyright &copy; Evandro Muti 2019</span>
       </div>
     </div>
   </footer>
 
-  <!-- Portfolio Modals -->
-
-  <!-- Modal 1 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Threads</li>
-                  <li>Category: Illustration</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 2 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Explore</li>
-                  <li>Category: Graphic Design</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 3 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Finish</li>
-                  <li>Category: Identity</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 4 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Lines</li>
-                  <li>Category: Branding</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 5 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Southwest</li>
-                  <li>Category: Website Design</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 6 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Window</li>
-                  <li>Category: Photography</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+ 
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
@@ -701,13 +269,16 @@
 
   <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/fancybox/jquery.fancybox.js"></script>
+
 
   <!-- Contact form JavaScript -->
   <script src="js/jqBootstrapValidation.js"></script>
   <script src="js/contact_me.js"></script>
 
   <!-- Custom scripts for this template -->
-  <script src="js/agency.min.js"></script>
+  <script src="js/scripts.js"></script>
 
 </body>
 
