@@ -26,6 +26,22 @@
     offset: 56
   });
 
+  $("#geometrico-bn").click(function(){
+    $("#content").load("geometrico-bn.html");
+    deactivateNavBarLinks();
+    $("#geometrico-bn").addClass("active");
+  });
+
+  $("#geometrico-col").click(function(){
+    $("#content").load("geometrico-col.html");
+    deactivateNavBarLinks();
+    $("#geometrico-col").addClass("active");
+  });
+
+  var deactivateNavBarLinks = function () {
+    $(".nav-link").removeClass("active");
+  }
+
   // Collapse Navbar
   var navbarCollapse = function() {
     if ($("#mainNav").offset().top > 100) {
