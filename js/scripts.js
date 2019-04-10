@@ -43,6 +43,12 @@
     deactivateNavBarLinks();
     $("#geometrico-fig").addClass("active");
   });
+  
+  $("#treni").click(function(){
+    $("#content").load("treni.html");
+    deactivateNavBarLinks();
+    $("#treni").addClass("active");
+  });
 
   $("#biografia").click(function(){
     console.log("clicked")
