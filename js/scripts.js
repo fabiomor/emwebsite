@@ -15,8 +15,6 @@
     }
   });
 
-  var baseHref = "https://wwww.evandromuti.com/"
-
   // Closes responsive menu when a scroll trigger link is clicked
   $('.js-scroll-trigger').click(function() {
     $('.navbar-collapse').collapse('hide');
@@ -28,41 +26,41 @@
     offset: 56
   });
 
-  $("#content").load(baseHref + "home.html");
+  $("#content").load("home.html");
   $("#home").addClass("active");
 
   $("#home").click(function(){
-    $("#content").load(baseHref + "home.html");
+    $("#content").load("home.html");
     deactivateNavBarLinks();
     $("#home").addClass("active");
   });
 
   $("#geometrico-bn").click(function(){
-    $("#content").load(baseHref + "geometrico-bn.html");
+    $("#content").load("geometrico-bn.html");
     deactivateNavBarLinks();
     $("#geometrico-bn").addClass("active");
   });
 
   $("#geometrico-col").click(function(){
-    $("#content").load(baseHref + "geometrico-col.html");
+    $("#content").load("geometrico-col.html");
     deactivateNavBarLinks();
     $("#geometrico-col").addClass("active");
   });
 
   $("#geometrico-fig").click(function(){
-    $("#content").load(baseHref + "geometrico-fig.html");
+    $("#content").load("geometrico-fig.html");
     deactivateNavBarLinks();
     $("#geometrico-fig").addClass("active");
   });
   
   $("#treni").click(function(){
-    $("#content").load(baseHref + "treni.html");
+    $("#content").load("treni.html");
     deactivateNavBarLinks();
     $("#treni").addClass("active");
   });
 
   $("#biografia").click(function(){
-    $("#content").load(baseHref + "biografia.html");
+    $("#content").load("biografia.html");
     deactivateNavBarLinks();
     $("#biografia").addClass("active");
   });
