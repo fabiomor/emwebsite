@@ -246,6 +246,22 @@ header.masthead .intro-text .intro-heading {
   width: 100%;
 }
 
+.evento {
+  padding: 2rem;
+  height: 400px;
+}
+
+.evento img {
+  max-height: 300px;
+}
+
+.evento h1 {
+  color: crimson;
+  margin-bottom: 2rem;
+}
+
+
+
 
 
 #portfolio .portfolio-item {
@@ -301,10 +317,6 @@ header.masthead .intro-text .intro-heading {
   padding: 25px;
   text-align: center;
   background-color: #fff;
-}
-
-.portfolio-caption h1{
-
 }
 
 #portfolio .portfolio-item {

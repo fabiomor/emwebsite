@@ -26,6 +26,15 @@
     offset: 56
   });
 
+  $("#content").load("home.html");
+  $("#home").addClass("active");
+
+  $("#home").click(function(){
+    $("#content").load("home.html");
+    deactivateNavBarLinks();
+    $("#home").addClass("active");
+  });
+
   $("#geometrico-bn").click(function(){
     $("#content").load("geometrico-bn.html");
     deactivateNavBarLinks();
@@ -51,7 +60,6 @@
   });
 
   $("#biografia").click(function(){
-    console.log("clicked")
     $("#content").load("biografia.html");
     deactivateNavBarLinks();
     $("#biografia").addClass("active");
