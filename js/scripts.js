@@ -38,6 +38,20 @@
     $("#geometrico-col").addClass("active");
   });
 
+  $("#geometrico-fig").click(function(){
+    $("#content").load("geometrico-fig.html");
+    deactivateNavBarLinks();
+    $("#geometrico-fig").addClass("active");
+  });
+
+  $("#biografia").click(function(){
+    console.log("clicked")
+    $("#content").load("biografia.html");
+    deactivateNavBarLinks();
+    $("#biografia").addClass("active");
+  });
+
+
   var deactivateNavBarLinks = function () {
     $(".nav-link").removeClass("active");
   }
