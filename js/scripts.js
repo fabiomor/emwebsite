@@ -15,17 +15,6 @@
     }
   });
 
-  // Closes responsive menu when a scroll trigger link is clicked
-  $('.js-scroll-trigger').click(function() {
-    $('.navbar-collapse').collapse('hide');
-  });
-
-  // Activate scrollspy to add active class to navbar items on scroll
-  $('body').scrollspy({
-    target: '#mainNav',
-    offset: 56
-  });
-
   $("#content").load("home.html");
   $("#home").addClass("active");
 
@@ -38,6 +27,7 @@
   $("#geometrico-bn").click(function(){
     $("#content").load("geometrico-bn.html");
     deactivateNavBarLinks();
+    $('.navbar-collapse').collapse('hide');
     $("#geometrico-bn").addClass("active");
   });
 
@@ -68,7 +58,16 @@
 
   var deactivateNavBarLinks = function () {
     $(".nav-link").removeClass("active");
+    $('.navbar-collapse').collapse('hide');
   }
+
+  // Hide collapsed navbar if a click outside it is made
+  $("body").click(function (event) {
+    var navigation = $(event.target).parents(".navbar").length;
+    if(!navigation) {
+        $(".navbar .navbar-collapse").collapse("hide");
+    }
+  });
 
   // Collapse Navbar
   var navbarCollapse = function() {
@@ -82,12 +81,4 @@
   navbarCollapse();
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
-
-  // Hide navbar when modals trigger
-  $('.portfolio-modal').on('show.bs.modal', function(e) {
-    $('.navbar').addClass('d-none');
-  })
-  $('.portfolio-modal').on('hidden.bs.modal', function(e) {
-    $('.navbar').removeClass('d-none');
-  })
 })(jQuery); // End of use strict
