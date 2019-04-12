@@ -167,6 +167,11 @@ img::-moz-selection {
   }
 }
 
+/* My header */
+.header img {
+  height: 200px;
+}
+
 header.masthead {
   text-align: center;
   color: white;
@@ -248,7 +253,7 @@ header.masthead .intro-text .intro-heading {
 
 .evento {
   padding: 2rem;
-  height: 400px;
+  height: 450px;
 }
 
 .evento img {
