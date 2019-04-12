@@ -253,7 +253,7 @@ header.masthead .intro-text .intro-heading {
 
 .evento {
   padding: 2rem;
-  height: 450px;
+  height: 500px;
 }
 
 .evento img {
@@ -536,6 +536,12 @@ header.masthead .intro-text .intro-heading {
 .timeline .timeline-body > ul,
 .timeline .timeline-body > p {
   margin-bottom: 0;
+}
+
+@media (max-width: 576px) {
+  .evento {
+    text-align: center;
+  }
 }
 
 @media (min-width: 768px) {
