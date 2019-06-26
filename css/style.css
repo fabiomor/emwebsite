@@ -169,7 +169,7 @@ img::-moz-selection {
 
 /* My header */
 .header img {
-  height: 200px;
+  height: 250px !important;
 }
 
 header.masthead {
@@ -265,7 +265,9 @@ header.masthead .intro-text .intro-heading {
   margin-bottom: 2rem;
 }
 
-
+.scritti-critici p {
+  font-style: italic;
+}
 
 
 

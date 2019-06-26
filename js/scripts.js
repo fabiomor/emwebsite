@@ -55,6 +55,12 @@
     $("#biografia").addClass("active");
   });
 
+  $("#scritti-critici-it").click(function(){
+    $("#content").load("scritti-critici-it.html");
+    deactivateNavBarLinks();
+    $("#scritti-critici-it").addClass("active");
+  });
+
 
   var deactivateNavBarLinks = function () {
     $(".nav-link").removeClass("active");
