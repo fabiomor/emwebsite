@@ -15,6 +15,8 @@
     }
   });
 
+  //var mostreDom = $("#content")[0].innerHtml.findElementById("mostre-personali");
+
   $("#content").load("home.html");
   $("#home").addClass("active");
 
@@ -61,11 +63,31 @@
     $("#scritti-critici-it").addClass("active");
   });
 
+  $("#mostre-personali").click(function(){
+    $("#content").load("mostre-personali.html");
+    deactivateNavBarLinks();
+    $("#mostre-collettive").click(function(){
+      console.log("click listener");
+      $("#content").load("mostre-collettive.html");
+    });
+    $("#mostre-personali").addClass("active");
+  });
+
+  $("#mostre-collettive").ready(function(){
+    console.log("loaded");
+    $("#mostre-collettive").click(function(){
+      console.log("click listener");
+      $("#content").load("mostre-collettive.html");
+    });
+  });
+
+ 
 
   var deactivateNavBarLinks = function () {
     $(".nav-link").removeClass("active");
     $('.navbar-collapse').collapse('hide');
   }
+
 
   // Hide collapsed navbar if a click outside it is made
   $("body").click(function (event) {
