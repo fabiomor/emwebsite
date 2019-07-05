@@ -253,11 +253,21 @@ header.masthead .intro-text .intro-heading {
 
 .evento {
   padding: 2rem;
-  height: 500px;
 }
 
 .evento img {
-  max-height: 300px;
+  /* mx auto*/
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  /* img-fluid */
+  max-width: 100%;
+  height: auto;
+  /*thumbnail*/
+  padding: .25rem;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: .25rem;
 }
 
 .evento h1 {
