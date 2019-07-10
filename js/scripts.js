@@ -63,23 +63,16 @@
     $("#scritti-critici-it").addClass("active");
   });
 
-  $("#mostre-personali").click(function(){
+  $(document).delegate("#mostre-collettive", "click", function() {
+    $("#content").load("mostre-collettive.html");
+  });
+
+  $(document).delegate("#mostre-personali", "click", function() {
     $("#content").load("mostre-personali.html");
     deactivateNavBarLinks();
-    $("#mostre-collettive").click(function(){
-      console.log("click listener");
-      $("#content").load("mostre-collettive.html");
-    });
     $("#mostre-personali").addClass("active");
   });
 
-  $("#mostre-collettive").ready(function(){
-    console.log("loaded");
-    $("#mostre-collettive").click(function(){
-      console.log("click listener");
-      $("#content").load("mostre-collettive.html");
-    });
-  });
 
  
 
